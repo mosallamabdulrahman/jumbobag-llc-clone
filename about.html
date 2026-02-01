@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - JumboBag LLC</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandBlue: '#333b8a',
+            brandGreen: '#82bc3f',
+            brandDarkBlue: '#252b66',
+            textGray: '#555555',
+            lightGray: '#f7f7f7',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Open Sans', sans-serif; }
+    .nav-link.active::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #82bc3f;
+    }
+    .hero-overlay {
+      background: rgba(0, 0, 0, 0.45);
+    }
+    .quote-overlay {
+      background: rgba(255, 255, 255, 0.85);
+    }
+    .mobile-nav-item {
+      @apply py-4 border-b border-gray-200 text-brandBlue font-semibold uppercase text-sm tracking-widest;
+    }
+  </style>
+</head>
+<body class="bg-white">
+
+  <!-- Header Section -->
+  <header class="bg-white">
+    <div class="max-w-[1440px] mx-auto px-6 py-6 flex justify-between items-center">
+      <!-- Logo -->
+      <a href="/" class="flex-shrink-0">
+        <img src="https://jumbobag.com/wp-content/uploads/2021/07/FiveStarHolding_Logo-01.png" alt="Five Star Holding" class="h-14 lg:h-16 w-auto">
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden lg:flex items-center space-x-10">
+        <a href="#" class="nav-link active text-textGray text-xs font-semibold uppercase tracking-widest relative">About</a>
+        <a href="#" class="nav-link text-textGray text-xs font-semibold uppercase tracking-widest hover:text-brandGreen">Jumbobag Products</a>
+        <a href="#" class="nav-link text-textGray text-xs font-semibold uppercase tracking-widest hover:text-brandGreen">Sustainability</a>
+        <a href="#" class="nav-link text-textGray text-xs font-semibold uppercase tracking-widest hover:text-brandGreen">Scope</a>
+        <a href="#" class="nav-link text-textGray text-xs font-semibold uppercase tracking-widest hover:text-brandGreen">Locations</a>
+        <button class="bg-brandGreen text-white px-6 py-3 rounded text-xs font-bold uppercase tracking-widest hover:opacity-90 transition-opacity">Contact Us</button>
+      </nav>
+
+      <!-- Hamburger Menu -->
+      <button id="hamburger-btn" class="lg:hidden text-brandBlue">
+        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Green Border UNDER Menu -->
+    <div class="w-full h-1.5 bg-brandGreen"></div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative h-[440px] flex items-center justify-start">
+    <div class="absolute inset-0 z-0">
+      <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&q=80&w=2000" alt="Industrial Hero" class="w-full h-full object-cover">
+      <div class="absolute inset-0 hero-overlay"></div>
+    </div>
+    <div class="relative z-10 w-full max-w-[1440px] mx-auto px-6 lg:px-24">
+      <h1 class="text-white text-7xl lg:text-8xl font-light uppercase tracking-tighter">About</h1>
+    </div>
+  </section>
+
+  <!-- The Jumbo Difference Section -->
+  <section class="py-20 lg:py-28 bg-white">
+    <div class="max-w-[1440px] mx-auto px-6 lg:px-24">
+      <h2 class="text-brandBlue text-4xl lg:text-5xl font-normal uppercase mb-10 tracking-tight">The Jumbo Difference</h2>
+      <div class="space-y-8 max-w-7xl">
+        <p class="text-textGray text-2xl lg:text-3xl font-light leading-relaxed">
+          At JumboBag LLC you will be assured of timely supply of the highest quality packaging deserving of your product and business.
+        </p>
+        <p class="text-textGray text-base lg:text-lg font-light leading-relaxed">
+          You will find our customer support second to none. Our commitment to innovation through technical engineering offers a critical component to your specification optimization. We will offer you value added partnerships at competitive pricing levels.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About JumboBag LLC Split Section -->
+  <section class="pb-24 lg:pb-32 bg-white">
+    <div class="max-w-[1440px] mx-auto px-6 lg:px-24 flex flex-col lg:flex-row items-start gap-16 lg:gap-24">
+      <!-- Left: Image with slight back element -->
+      <div class="w-full lg:w-1/2 relative">
+        <div class="absolute -top-10 -left-10 w-64 h-64 bg-brandGreen opacity-20 -z-10 hidden lg:block"></div>
+        <img src="https://images.unsplash.com/photo-1590247813693-5541d1c609fd?auto=format&fit=crop&q=80&w=1200" alt="JumboBag Production" class="w-full h-auto shadow-2xl">
+      </div>
+      
+      <!-- Right: Text Content -->
+      <div class="w-full lg:w-1/2">
+        <h2 class="text-brandBlue text-3xl font-semibold uppercase mb-8 tracking-tight">About JumboBag LLC</h2>
+        <div class="text-textGray text-base font-light leading-relaxed space-y-6">
+          <p>
+            Since 1992, JumboBag LLC is engaged in the production and marketing of Flexible Intermediate Bulk Containers. The company operates in the US, Europe and, through business partnerships, in Asia. JBC is strategically headquartered in Houston, Texas with warehousing locations throughout the continental United States.
+          </p>
+          <p>
+            Capitalizing on our technical background, JumboBag LLC provides viable FIBC packaging options supported by technical expertise and reliable supply streams to the North American Markets.
+          </p>
+          <p>
+            JumboBag has long-standing partnerships with some of the premier manufacturers in the world. Our facilities offer products that conform to today’s stringent regulations and requirements of the food/pharmaceutical and chemicals. JumboBag also provides a North American production facility, which offers our customers the reassurance of guaranteed supply in the event of unpredictable usage spikes or unexpected disruptions of the supply chain.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Full-width Quote Section -->
+  <section class="relative min-h-[450px] flex items-center justify-center py-20">
+    <div class="absolute inset-0 z-0">
+      <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=2000" alt="Warehouse Background" class="w-full h-full object-cover">
+      <div class="absolute inset-0 quote-overlay"></div>
+    </div>
+    <div class="relative z-10 max-w-5xl px-6 text-center">
+      <p class="text-textGray text-3xl lg:text-4xl font-light leading-tight italic">
+        "JumboBag will provide the highest level of customer service, not only with timely information regarding the status of orders, but with prompt responses to technical or regulatory inquiries."
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-brandDarkBlue py-16 text-white">
+    <div class="max-w-[1440px] mx-auto px-6 lg:px-24">
+      <div class="flex flex-col lg:flex-row justify-between items-start gap-12 border-b border-white/10 pb-16">
+        <!-- Footer Logo -->
+        <div class="w-full lg:w-1/4">
+          <img src="https://jumbobag.com/wp-content/uploads/2018/11/jumbobag_logo.png" alt="JumboBag LLC" class="h-10 w-auto brightness-0 invert opacity-60">
+        </div>
+
+        <!-- Footer Nav -->
+        <nav class="w-full lg:w-1/2 flex flex-wrap gap-x-8 gap-y-4 justify-center">
+          <a href="#" class="uppercase text-[11px] font-bold tracking-widest hover:text-brandGreen transition-colors">About</a>
+          <a href="#" class="uppercase text-[11px] font-bold tracking-widest hover:text-brandGreen transition-colors">Jumbobag Products</a>
+          <a href="#" class="uppercase text-[11px] font-bold tracking-widest hover:text-brandGreen transition-colors">Sustainability</a>
+          <a href="#" class="uppercase text-[11px] font-bold tracking-widest hover:text-brandGreen transition-colors">Scope</a>
+          <a href="#" class="uppercase text-[11px] font-bold tracking-widest hover:text-brandGreen transition-colors">Locations</a>
+        </nav>
+
+        <!-- Address -->
+        <div class="w-full lg:w-1/4 text-left lg:text-right">
+          <p class="text-sm font-bold mb-1">JumboBag LLC</p>
+          <p class="text-xs text-white/60 mb-1">9835 Genard Rd. | Suite A3</p>
+          <p class="text-xs text-white/60 mb-4">Houston, TX 77041</p>
+          <a href="#" class="text-[11px] font-bold tracking-wider underline hover:text-brandGreen">Supplier Code of Conduct</a>
+        </div>
+      </div>
+
+      <div class="pt-8 flex flex-col md:flex-row justify-between items-center text-[10px] uppercase font-bold tracking-widest text-white/40">
+        <p>2026 © Five Star Holding LLC</p>
+        <p class="mt-4 md:mt-0">Designed and developed by Wildfire</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Menu Drawer -->
+  <div id="mobile-menu" class="fixed inset-0 z-[100] hidden">
+    <!-- Backdrop -->
+    <div id="mobile-backdrop" class="absolute inset-0 bg-black/50"></div>
+    
+    <!-- Drawer -->
+    <div class="absolute left-0 top-0 h-full w-[85%] max-w-sm bg-white shadow-2xl p-8 transform -translate-x-full transition-transform duration-300">
+      <div class="flex justify-between items-center mb-12">
+        <img src="https://jumbobag.com/wp-content/uploads/2021/07/FiveStarHolding_Logo-01.png" alt="Logo" class="h-10">
+        <button id="close-menu" class="text-brandBlue">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+      
+      <nav class="flex flex-col">
+        <a href="#" class="mobile-nav-item border-t">About</a>
+        <a href="#" class="mobile-nav-item">JumboBag Products</a>
+        <a href="#" class="mobile-nav-item">Sustainability</a>
+        <a href="#" class="mobile-nav-item">Scope</a>
+        <a href="#" class="mobile-nav-item">Locations</a>
+        <a href="#" class="mobile-nav-item border-none text-brandGreen">Contact Us</a>
+      </nav>
+    </div>
+  </div>
+
+  <script>
+    const hamburgerBtn = document.getElementById('hamburger-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const closeBtn = document.getElementById('close-menu');
+    const backdrop = document.getElementById('mobile-backdrop');
+    const drawer = mobileMenu.querySelector('.bg-white');
+
+    function openMenu() {
+      mobileMenu.classList.remove('hidden');
+      setTimeout(() => {
+        drawer.classList.remove('-translate-x-full');
+      }, 10);
+    }
+
+    function closeMenu() {
+      drawer.classList.add('-translate-x-full');
+      setTimeout(() => {
+        mobileMenu.classList.add('hidden');
+      }, 300);
+    }
+
+    hamburgerBtn.addEventListener('click', openMenu);
+    closeBtn.addEventListener('click', closeMenu);
+    backdrop.addEventListener('click', closeMenu);
+  </script>
+</body>
+</html>
